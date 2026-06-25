@@ -1,0 +1,15 @@
+# wechat-article-reader - Python Dependencies
+# ================================================
+
+# Core (Strategy 1) - REQUIRED
+# curl_cffi: JA4/TLS/HTTP2 fingerprint spoofing (impersonate Chrome 126)
+curl_cffi>=0.7.0
+
+# Optional - Strategy 2 (nodriver headless Chrome CDP)
+# Uncomment to enable:
+# nodriver
+
+# Optional - Strategy 3 (Camoufox anti-detect browser)
+# Install separately via: uv tool install wechat-article-to-markdown
+
+# Strategy 4 (search engine cache) uses built-in urllib - no extra deps
