@@ -272,7 +272,7 @@ def _has_real_content(html: str) -> bool:
     return (
         "js_content" in html
         and "环境异常" not in html
-        and "请完成上方验证" not in html
+        and "请完成下方验证" not in html
         and "操作过于频繁" not in html
         and len(html) > 5000  # 验证页通常很短
     )
@@ -816,7 +816,7 @@ def _has_real_content(html: str) -> bool:
     return (
         "js_content" in html           # 核心 DOM 节点
         and "环境异常" not in html      # 验证页特征
-        and "请完成上方验证" not in html
+        and "请完成下方验证" not in html
         and "操作过于频繁" not in html
         and len(html) > 5000            # 验证页通常很短
     )
